@@ -2,7 +2,7 @@ const axios = require('axios');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Users = require('../Models/models');
-const { authenticate } = require('../Authentication/Routes');
+const { authenticate } = require('../Authentication/Auth');
 const secret = process.env.JWT_SECRET || 'testing';
 
 module.exports = server => {
