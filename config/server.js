@@ -2,9 +2,9 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-cors helmet = require('helmet');
+const helmet = require('helmet');
 
-const configureRoutes = require('./Authentication/Routes.js');
+const configureRoutes = require('../Authentication/Routes.js');
 
 const server = express();
 
