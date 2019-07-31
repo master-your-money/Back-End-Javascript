@@ -6,7 +6,7 @@ const { authenticate } = require('../Authentication/Auth');
 const secret = process.env.JWT_SECRET || 'secret';
 
 module.exports = server => {
-    server.post('/register');
+    server.post('/register', register);
     server.post('/login', login);
 };
 
