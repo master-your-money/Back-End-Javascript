@@ -3,10 +3,10 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Users = require('../Models/models');
 const { authenticate } = require('../Authentication/Auth');
-const secret = process.env.JWT_SECRET || 'testing';
+const secret = process.env.JWT_SECRET || 'secret';
 
 module.exports = server => {
-    server.post('/register');
+    server.post('/register', register);
     server.post('/login', login);
 };
 
