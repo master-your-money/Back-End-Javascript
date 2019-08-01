@@ -17,15 +17,10 @@ budgetRoute.post('/', (req, res) => {
                 Region
             })
             .then(budget => {
-                if(budget.length === 0) {
-                    res.status(404).json({message: "The budget with specified id does not exist"})
-                } else {
                     res.status(201).json(budget);
-                }
             })
             .catch(err => {
                 console.log(err);
-                res.status(500).json({error: "There was an error while saving this action to the database"});
             });
     }   
 });
