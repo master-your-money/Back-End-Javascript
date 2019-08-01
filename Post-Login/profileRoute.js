@@ -20,9 +20,6 @@ profileRouter.post('/', (req, res) => {
             })
             .then(profile => {
                     res.status(201).json({message: `Profile ${id} has been added`});
-            })
-            .catch(err => {
-                console.log(err);
             });
     }   
 });
