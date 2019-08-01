@@ -19,15 +19,10 @@ profileRouter.post('/', (req, res) => {
                 bio
             })
             .then(profile => {
-                if(profile.length === 0) {
-                    res.status(404).json({message: "Profile not found"})
-                } else {
                     res.status(201).json(profile);
-                }
             })
             .catch(err => {
                 console.log(err);
-                res.status(500).json({error: "There was an error while saving this profile to the database"});
             });
     }   
 });
