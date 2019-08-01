@@ -17,7 +17,7 @@ exports.up = function(knex) {
     profiles.string('location', 128).notNullable();
     profiles.string('website', 128).notNullable();
     profiles.string('bio').notNullable();
-  })
+  });
 };
 
 exports.down = function(knex) {

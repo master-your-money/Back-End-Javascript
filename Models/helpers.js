@@ -20,17 +20,17 @@ function profileToBody(profile) {
     };
 
     if (profile.budget) {
-        result.budget = profile.budget.map(bu => ({
-            ...bu,
-            completed: intToBoolean(bu.completed)
+        result.budget = profile.budget.map(budget => ({
+            ...budget,
+            completed: intToBoolean(budget.completed)
         }));
     }
     return result;
 }
 
-function budgetToBody(bu) {
+function budgetToBody(budget) {
     return {
-        ...bu,
-        completed: intToBoolean(bu.completed),
+        ...budget,
+        completed: intToBoolean(budget.completed),
     };
 }
