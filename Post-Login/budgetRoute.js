@@ -18,9 +18,6 @@ budgetRoute.post('/', (req, res) => {
             })
             .then(budget => {
                     res.status(201).json({message: `Budget ${id} has been added`});
-            })
-            .catch(err => {
-                console.log(err);
             });
     }   
 });
