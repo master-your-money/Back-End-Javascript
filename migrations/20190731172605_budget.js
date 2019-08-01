@@ -15,7 +15,7 @@ exports.up = function(knex) {
        budget.integer('Income');
        budget.integer('Expenditure');
        budget.string('Region').notNullable();
-  })
+  });
 };
 
 exports.down = function(knex) {
