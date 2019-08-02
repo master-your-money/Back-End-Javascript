@@ -57,7 +57,7 @@ profileRouter.put('/:id', (req, res) => {
     const {user_id, firstname, lastname, location, website, bio} = req.body;
 
     if(!firstname || !bio) {
-        res.status(400).json({errorMessage: "Please provide a project name and description"});
+        res.status(400).json({errorMessage: "Please provide a profile name and description"});
     }
 
     db
