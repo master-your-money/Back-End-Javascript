@@ -37,7 +37,7 @@ profileRouter.get('/', (req, res) => {
             console.log(err);
             res.status(500).json({message: "Error"});
         });
-});
+}); 
 
 profileRouter.get('/budget/:id', (req, res) => {
     const {id} = req.params;
