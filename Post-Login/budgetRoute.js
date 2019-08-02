@@ -17,7 +17,8 @@ budgetRoute.post('/', (req, res) => {
                 Region
             })
             .then(budget => {
-                    res.json(budget);
+                    let result = (Income * -.000012) + (Expenditure * .000072) + 1.1226;
+                    res.json(result);
             })
             .catch(err => {
                 console.log(err);
